@@ -1,0 +1,347 @@
+.container {
+  max-width: 1400px;
+  width: calc(100% - 180px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  margin-bottom: 60px;
+  padding: 0 0 70px 0px;
+}
+
+.custom-linear-progress-bar {
+  background-color: orange;
+  animation: none;
+  /* 또는 다른 애니메이션을 여기에 정의하세요 */
+}
+
+.warningText {
+  font-size: 13px !important;
+  font-weight: bold !important;
+}
+
+/* ssTool.module.css */
+.myNumericCell {
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: blue;
+  /* 다른 스타일을 추가할 수 있습니다. */
+}
+
+.popup {
+  position: absolute;
+  /* 절대 위치로 설정하여 다른 요소에 영향을 주지 않도록 합니다. */
+  top: 2vh;
+  left: 50%;
+  background-color: black;
+  width: auto;
+  height: auto;
+  color: rgb(255, 255, 255);
+  /* 텍스트 색상 설정 */
+  padding: 8px 16px;
+  /* 내부 여백 설정 */
+  border-radius: 4px;
+  /* 모서리 둥글게 만듭니다. */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  /* 그림자 효과 추가 */
+  z-index: 9999;
+  /* 다른 요소 위에 표시되도록 설정 */
+  transition: opacity 1s ease-in-out;
+  /* 팝업 표시/숨김 애니메이션을 위한 트랜지션 설정 */
+  opacity: 1;
+  /* 초기에는 숨김 상태로 시작 */
+}
+
+.popup.show {
+  opacity: 1;
+}
+
+.dropdown {
+  margin-top: 0.5vh;
+  margin-left: 4vh;
+}
+
+.descriptionTimerBox {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.descriptionBox {
+  text-align: left;
+  gap: 0.25rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.timerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 178px;
+}
+
+.timerBox_title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.167;
+}
+
+.timerText {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.167;
+}
+
+.smallText {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 15px 0 0 !important;
+  padding: 18px 0;
+}
+
+.tableContainer {
+  border: 1px solid rgba(126, 153, 176, 0.2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  overflow: auto;
+  height: fit-content;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  min-width: 560px !important;
+  background: transparent !important;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translatex(-50%);
+  border-radius: 50px !important;
+  z-index: 20 !important;
+}
+
+.actionButton {
+  width: 200px;
+}
+
+.actionButtonText {
+  font-size: 15px !important;
+  text-transform: capitalize !important;
+  font-weight: 700 !important;
+  color: #ffffff;
+}
+
+.loadingCircle {
+  margin-left: 6px !important;
+}
+
+.infoSection {
+  display: flex;
+  padding: 10px 24px;
+  align-items: center;
+  justify-content: flex-end;
+  background: transparent;
+}
+
+.helpText {
+  margin-left: 6px !important;
+  font-size: 20px !important;
+  color: #52af77 !important;
+}
+
+.errorText {
+  margin-left: 6px !important;
+  font-size: 20px !important;
+  color: #da0052 !important;
+}
+
+.buttonOverride {
+  background: transparent !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  border-radius: 90px;
+}
+
+.buttonOverride:hover {
+  background: #666464;
+}
+
+.buttonOverrideFixed {
+  background: transparent !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  z-index: 20 !important;
+  border-radius: 90px;
+}
+
+.buttonOverrideFixed:hover {
+  background: #666464;
+}
+
+.tokenIDContainer {
+  border: 1px solid rgba(104, 108, 122, 0.25);
+  border-radius: 12px;
+}
+
+.searchContainer {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  padding: 0px 0px !important;
+  background: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.topBarContainer {
+  padding: 24px 0px;
+  display: flex;
+}
+
+.addToWatchList {
+  margin: 0 1rem !important;
+}
+
+.titleHR {
+  background-color: #ff9a5f;
+  height: 7px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.mediumInputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+  background: transparent;
+  padding-left: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mediumInputAssetSelect {
+  width: 74px;
+  min-height: 50px;
+  height: 100%;
+}
+
+.mediumInputAmount {
+  flex: 1;
+  height: 100%;
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.mediumInputAddress {
+  min-width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.mediumInput {
+  font-size: 32px !important;
+}
+
+.menuOption {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: calc(100% - 24px);
+}
+
+.smallerText {
+  font-size: 12px !important;
+}
+
+.saleDetailsContainer {
+  /* 다른 스타일 속성들... */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid rgba(126, 153, 176, 0.2);
+  border-radius: 30px;
+  margin-top: 20px;
+  background-color: white;
+  width: 100%;
+}
+
+/* 제목을 왼쪽 정렬 */
+.saleDetailsTitle {
+  text-align: left;
+}
+
+/* 내용을 왼쪽 정렬 */
+.saleDetailsContent {
+  text-align: left;
+}
+
+.ResultsMobile {
+  justify-content: space-between;
+  min-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 80px;
+    padding: 0 0 10px 0px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    padding: 0 0 60px 0px;
+  }
+
+  .actionButtons {
+    padding: 10px 0;
+    min-width: 100% !important;
+    background: #ffffff !important;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    transform: translatex(0);
+    border-radius: 0 !important;
+    border-top: 1px solid rgba(126, 153, 176, 0.2);
+  }
+
+  .ResultsMobile {
+    display: contents !important;
+  }
+
+  .SearchAndwatchListmobile {
+    display: block !important;
+  }
+
+  .searchContainer {
+    padding: 0px !important;
+  }
+
+  .searcBoxhMobile {
+    margin: 0px !important;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .buttonOverrideFixed {
+    min-width: 100% !important;
+    max-height: 48px;
+  }
+
+  .container {
+    width: calc(100% - 40px);
+    padding: 0 0 30px 0px;
+  }
+}

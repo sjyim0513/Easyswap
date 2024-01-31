@@ -1,0 +1,30 @@
+.accountButton {
+  margin-right: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  margin-left: 14px !important;
+  padding-left: 26px !important;
+  padding-right: 26px !important;
+  font-size: 1.3vw !important;
+  background: transparent;
+  border-radius: 90px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .accountButton {
+    max-width: 11vw;
+    /* background-color: rgba( 255, 255, 255, 0) !important; */
+    border-width: 1px !important;
+    border-style: solid;
+    max-height: 4vh;
+    border-radius: 90px !important;
+    display: flex;
+    align-items: center;
+    margin-left: 0 !important;
+  }
+}

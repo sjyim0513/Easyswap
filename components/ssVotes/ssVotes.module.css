@@ -1,0 +1,366 @@
+.container {
+  max-width: 1400px;
+  width: calc(100% - 180px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  margin-bottom: 60px;
+  padding: 0 0 70px 0px;
+}
+
+.descriptionTimerBox {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.descriptionBox {
+  text-align: left;
+  gap: 0.25rem;
+  flex-direction: column;
+  display: flex;
+  color: black;
+  width: 100%;
+}
+
+.titleHR {
+  background-color: #ff9a5f;
+  height: 7px;
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.timerBox {
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: space-around;
+  border: 1px solid rgb(254 142 90);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.timerBox_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3rem;
+  font-weight: 500;
+  font-family: "Buttershine Serif";
+}
+
+.timerText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  white-space: pre;
+  color: rgb(254 142 90);
+}
+
+.timerContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.timerLabel {
+  font-size: 2.2rem;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timerType {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smallText {
+  color: black;
+  margin: 0 15px 0 0 !important;
+  padding: 18px 0;
+  font-weight: bold;
+}
+
+.tableContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 30px;
+  box-shadow: none !important;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  min-width: 560px !important;
+  background: rgba(255, 255, 255, 1) !important;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 20 !important;
+}
+
+.actionButton {
+  width: 200px;
+}
+
+.actionButtonText {
+  font-size: 15px !important;
+  text-transform: capitalize !important;
+  font-weight: 700 !important;
+}
+
+.loadingCircle {
+  margin-left: 6px !important;
+}
+
+.infoSection {
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: flex-end;
+  background: transparent;
+}
+
+.helpText {
+  margin-left: 6px !important;
+  font-size: 20px !important;
+  color: #52af77 !important;
+}
+
+.errorText {
+  margin-left: 6px !important;
+  font-size: 20px !important;
+  color: red !important;
+}
+
+.buttonOverride {
+  background: rgb(255, 104, 75) !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  width: 58%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonOverride:disabled {
+  background: transparent !important;
+  color: red !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  z-index: 20 !important;
+  cursor: not-allowed !important;
+}
+
+.buttonOverride:hover {
+  background: rgba(255, 104, 75, 0.7);
+}
+
+.buttonOverrideFixed {
+  background: transparent !important;
+  color: black;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  z-index: 20 !important;
+  border-radius: 90px;
+  position: absolute;
+  /* 버튼의 위치를 설정합니다. */
+  height: 100%;
+  /* 부모 요소의 세로 크기에 맞추기 위해 100%로 설정합니다. */
+}
+
+.buttonOverrideFixed:hover {
+  background: #666464;
+}
+
+.tokenIDContainer {
+  border-radius: 12px;
+}
+
+.searchContainer {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  padding: 0px 0px !important;
+  background: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.topBarContainer {
+  padding: 24px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.mediumInputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+  background: transparent;
+  padding-left: 20px;
+}
+
+.mediumInputAssetSelect {
+  width: 74px;
+  min-height: 50px;
+  height: 100%;
+}
+
+.mediumInputAmount {
+  display: flex;
+  height: 100%;
+  width: 300px;
+}
+
+.mediumInputAddress {
+  min-width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.mediumInput {
+  font-size: 32px !important;
+}
+
+.menuOption {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: calc(100% - 24px);
+  margin: 0 auto;
+}
+
+.accordionSummary:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.smallerText {
+  font-size: 12px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 80px;
+    padding: 0 0 10px 0px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    padding: 0 0 60px 0px;
+  }
+
+  .actionButtons {
+    padding: 10px 0;
+    min-width: 100% !important;
+    justify-content: space-around;
+    bottom: 0px;
+    left: 0;
+    transform: translatex(0);
+    border-radius: 0 !important;
+    border-top: 1px solid rgba(126, 153, 176, 0.2);
+  }
+
+  .searchContainer {
+    padding: 0px !important;
+  }
+}
+
+.accountButton {
+  margin-right: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  margin-left: 14px !important;
+  padding-left: 26px !important;
+  padding-right: 26px !important;
+  font-size: 1.3vw !important;
+  background: transparent;
+  border-radius: 90px !important;
+  color: rgb(255, 174, 128) !important;
+}
+
+@media screen and (max-width: 560px) {
+  .buttonOverrideFixed {
+    min-width: 100% !important;
+    max-height: 48px;
+  }
+
+  .container {
+    width: calc(100% - 20px);
+    padding: 0 0 30px 0px;
+  }
+
+  .accountButton {
+    max-width: 11vw;
+    /* background-color: rgba( 255, 255, 255, 0) !important; */
+    border-width: 1px !important;
+    border-style: solid;
+    max-height: 4vh;
+    border-radius: 90px !important;
+    display: flex;
+    align-items: center;
+    margin-left: 0 !important;
+  }
+
+  .timerText {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .timerLabel {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .timerType {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .timerBox {
+    padding: 1rem !important;
+  }
+}

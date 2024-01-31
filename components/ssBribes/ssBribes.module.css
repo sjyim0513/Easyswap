@@ -1,0 +1,67 @@
+.container {
+  max-width: 1400px;
+  width: calc(100% - 180px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionBox {
+  align-self: center;
+  text-align: center;
+  gap: 0.25rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.descriptionText {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+  padding: 1rem 0;
+  max-width: 400px;
+  text-align: center;
+  align-self: center;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+}
+
+.titleHR {
+  background-color: #ff9a5f;
+  height: 7px;
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 20px !important;
+  margin-bottom: 24px !important;
+}
+
+.bribesContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+}
+
+.buttonOverride {
+  background: transparent !important;
+  font-weight: 700 !important;
+  width: fit-content !important;
+  border-radius: 30px !important;
+  padding: 8px 16px !important;
+}
+
+.actionButtonText {
+  font-size: 15px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: calc(100% - 40px);
+    margin: auto;
+    padding: 0 0 10px 0px;
+    margin-bottom: 20px;
+  }
+}

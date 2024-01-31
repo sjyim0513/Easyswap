@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Ether",
+    "address": "0x45A318273749d6eb00f5F6cA3bC7cD3De26D642A",
+    "symbol": "ETH",
+    "decimals": 18,
+    "chainId": 3441005,
+    "logoURI": "/tokens/eth.png",
+    "isWhitelisted": true
+  },
+  {
+    "name": "EasySwap token",
+    "address": "0x7c6d0A486220c0Dbc7243c4560ceA71AF1B1a209",
+    "symbol": "EASY",
+    "decimals": 18,
+    "chainId": 3441005,
+    "logoURI": "/tokens/govToken-logo.png"
+  },
+  {
+    "name": "Wrapped Ether",
+    "address": "0x67A1f4A939b477A6b7c5BF94D97E45dE87E608eF",
+    "symbol": "WETH",
+    "decimals": 18,
+    "chainId": 3441005,
+    "logoURI": "/tokens/weth.png"
+  },
+  {
+    "address": "0x64B655696B90FcdEa8901484601d59b0570F519d",
+    "chainId": 3441005,
+    "name": "testUSDC Token",
+    "symbol": "testUSDC",
+    "decimals": 6,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/usdc.jpg"
+  },
+  {
+    "name": "testUSDT Token",
+    "chainId": 3441005,
+    "address": "0xeD69060f8718db16d6F255Cf2a0909f70715d54b",
+    "symbol": "testUSDT",
+    "decimals": 6,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/usdt.jpg"
+  },
+  {
+    "name": "testAAVE Token",
+    "chainId": 3441005,
+    "address": "0xe434612F3372E0c77cD33196d61Cc82d74B06527",
+    "symbol": "testAAVE",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/aave.jpg"
+  },
+  {
+    "name": "testCRV Token",
+    "chainId": 3441005,
+    "address": "0xe569aBc166aD195F8BA18319ca6e72093a776c3B",
+    "symbol": "testCRV",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/crv.jpg"
+  },
+  {
+    "name": "testCAKE Token",
+    "chainId": 3441005,
+    "address": "0x6967AF49Db5a34F4228A3607C04B2F4aB0bA97b9",
+    "symbol": "testCAKE",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/cake.jpg"
+  },
+  {
+    "name": "testBAL Token",
+    "chainId": 3441005,
+    "address": "0x73B7847Ec53Aa510686b1e2Cd91e6505dBb65A4d",
+    "symbol": "testBAL",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/bal.jpg"
+  },
+  {
+    "name": "testKNC Token",
+    "chainId": 3441005,
+    "address": "0x4EFEfa698702890073bF34522b914B1bAd340090",
+    "symbol": "testKNC",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/knc.jpg"
+  }
+]

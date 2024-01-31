@@ -1,0 +1,198 @@
+.headerContainer {
+  background: #fff8f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerDesktop {
+  align-self: center;
+  display: flex;
+}
+
+.headerRight {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  padding: 1.4rem 2% 1.4rem 0;
+}
+
+.connectWallet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userMenu {
+  z-index: 10030 !important;
+}
+
+.userMenuText {
+  color: #000000;
+  transform: scale(0.85);
+}
+
+.ddIcon {
+  color: #7e99b0;
+  margin-left: 5px;
+  margin-top: -2px;
+  margin-right: -8px;
+}
+
+.metamask {
+  background-repeat: no-repeat;
+  /* 배경 이미지 반복 비활성화 */
+  background-position: center center;
+  /* 이미지를 가운데 정렬 */
+}
+
+.dropdownMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownItem {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.userMenuIcon {
+  padding: 0 !important;
+  margin-right: -30px;
+  color: #000 !important;
+}
+
+.link {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.link:hover {
+  background-color: rgba(255, 174, 128, 0.1) !important;
+}
+
+.logoContainer {
+  cursor: pointer;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin: 0 2rem;
+}
+
+.logoText {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  padding-top: 10px;
+  padding-bottom: 3px;
+}
+
+.networkIcon {
+  font-size: 100px !important;
+  margin-bottom: 20px;
+}
+
+.intro {
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  color: #fff !important;
+}
+
+.accountButton {
+  text-align: center;
+  font-size: 1.3vw !important;
+  border-radius: 20px !important;
+  background-color: #e6f2f1 !important;
+  max-width: fit-content !important;
+  padding: 9px 12px !important;
+  height: -webkit-fill-available;
+}
+
+.iconColor {
+  color: #ffffff;
+}
+
+.iconColor1 {
+  color: #000000;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.accountIcon {
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  margin-right: 12px;
+}
+
+.headBtnTxt {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  color: #34a797 !important;
+  white-space: pre;
+}
+
+@media screen and (max-width: 1680px) {
+  .headerContainer {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .accountButton {
+    max-width: 11vw;
+    /* background-color: rgba( 255, 255, 255, 0) !important; */
+    align-items: center;
+    margin-left: 0 !important;
+    z-index: 10030 !important;
+  }
+
+  .userMenu {
+    z-index: 10030 !important;
+  }
+
+  .userMenuText {
+    color: #000000;
+    font-size: 0.5vw !important;
+  }
+
+  .logoContainer {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .accountButton {
+    max-width: 11vw;
+    /* background-color: rgba( 255, 255, 255, 0) !important; */
+    max-height: 4vh;
+    align-items: center;
+    margin-left: 0 !important;
+    z-index: 10030 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logoContainer {
+    width: auto;
+    margin-left: 0;
+  }
+}

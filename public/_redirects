@@ -1,0 +1,4 @@
+/del/* http://43.200.19.230:8003/:splat 200
+/vest/*  /vest  502
+/liquidity/*  /liquidity  404
+/liquidity/*  /liquidity  502

@@ -1,0 +1,768 @@
+.titleText {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 72px;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+}
+
+/* home.module.css 파일 내부 */
+.homebg {
+  background: url("/images/home.png"), lightgray 50% / cover no-repeat;
+  /* 화면 전체 너비로 설정 */
+  position: relative;
+  overflow: hidden;
+}
+
+.infobg {
+  background-color: #fff8f3;
+  padding-top: 2%;
+}
+
+.securityContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: left;
+  box-shadow: 0px -8px 18px -2px rgba(219, 181, 134, 0.5);
+  background: #fff4e8;
+  border-radius: 15px 15px 0px 0px;
+  padding: 6rem 1rem;
+  gap: 2rem;
+}
+
+.infoTitle {
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 120px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  font-family: "Buttershine Serif" !important;
+  padding: 2px;
+}
+
+.infoTitle2 {
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 110px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  font-family: "Buttershine Serif" !important;
+  padding: 2px;
+}
+
+.exp1 {
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.expTitle {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4rem !important;
+  transition: all 0.15s ease-out 0s;
+  height: fit-content;
+}
+
+.expItems {
+  font-size: 18px !important;
+  color: black !important;
+  font-weight: 500 !important;
+  line-height: 26px !important;
+  transition: all 0.15s ease-out 0s;
+}
+
+.fullScreenBackground::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  z-index: -1;
+}
+
+.containerLeft {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 2rem;
+  height: 100%;
+}
+
+.expContainer {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 40px;
+  opacity: 0;
+  height: 100%;
+  background-color: #fff0dd;
+}
+
+.animation {
+  animation: fadeIn 1s ease both;
+}
+
+.animationRight {
+  animation: fadeSideRight 1s ease both;
+}
+
+.animationLeft {
+  animation: fadeSideLeft 1s ease both;
+}
+
+.partnershipContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 0rem;
+  box-shadow: 0px -8px 18px -2px rgba(219, 181, 134, 0.5),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.typewriterText {
+  overflow: hidden;
+  /* 텍스트를 보이지 않도록 설정 */
+  white-space: nowrap;
+  /* 공백 없이 텍스트가 표시되도록 설정 */
+  animation: typing 4s steps(40, end);
+}
+
+.partnershipImageContainer {
+  display: grid;
+  padding: 6rem 0rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: fit-content;
+}
+
+.partnershipItems {
+  width: 250px;
+  height: auto;
+  margin: 30px;
+}
+
+.LinkImageMedium {
+  display: flex;
+  align-items: center;
+}
+
+.communityContainer {
+  background-color: #000;
+  padding: 6rem 6rem;
+}
+
+.footerLinkItem {
+  border-radius: 10px;
+}
+
+.footerLinkItem:hover {
+  font-weight: bolder;
+}
+
+.communityTitle {
+  color: #ffffff;
+  font-style: normal;
+  line-height: normal;
+}
+
+.communityLinkContainer {
+  display: flex;
+  padding: 5rem 0;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.LinkBorder {
+  align-items: center;
+  padding: 0.5rem 1rem;
+  display: flex;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+}
+
+.LinkBorder:hover {
+  border: 2px solid rgba(255, 255, 255, 1) !important;
+}
+
+.LinkBorder:hover .LinkTitle {
+  color: #000;
+  /* 내부 요소인 .LinkTitle의 텍스트 색상을 호버 시 검은색으로 변경 */
+}
+
+.LinkTitle {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.buttonOverride {
+  background: transparent;
+  border-radius: 50px !important;
+  color: #414141 !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  background-color: #84ead5 !important;
+  width: fit-content !important;
+  text-align: center !important;
+  padding: 0.75rem 3rem !important;
+  white-space: nowrap !important;
+  min-width: 150px !important;
+}
+
+.buttonOverride:hover {
+  background-color: #c1fef1 !important;
+}
+
+.securitybox {
+  display: grid;
+  margin-bottom: 1rem;
+}
+
+.auditDetails {
+  color: black;
+  font-size: 26px !important;
+  font-weight: 600 !important;
+  font-style: normal;
+}
+
+.gridContainer {
+  position: relative;
+  top: 5%;
+  /* Equivalent to top-1/4 */
+  left: 50%;
+  /* Equivalent to left-1/2 */
+  z-index: 2;
+  margin-top: 50px;
+  height: auto;
+  max-width: 939px;
+  transform: translateX(-50%) translateY(0);
+  text-align: center;
+}
+
+.arrowLink {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.partnershipTitle {
+  display: grid;
+  justify-content: center;
+  color: black;
+  font-style: normal;
+}
+
+.expGrid {
+  display: grid;
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.partnershipTitle1 {
+  font-size: 80px !important;
+  font-weight: 400 !important;
+  display: inline;
+  justify-content: center;
+  font-family: "Buttershine Serif" !important;
+}
+
+.enterAppMobile {
+  margin-top: 6rem !important;
+}
+
+.infoTop {
+  margin: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background: #fff0dd;
+}
+
+.footerLeft {
+  display: grid;
+  padding: 0 3rem;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.footerRight {
+  display: grid;
+  padding: 0 3rem;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  width: 60%;
+}
+
+.footerImageLinkContainer {
+  display: flow-root;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.followus {
+  font-size: 20px;
+  color: #0a0a0a;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.button:hover {
+  border: 2px solid rgba(0, 0, 0, 1) !important;
+}
+
+.footerImageLinkItems {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.footerLinkContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footerLinkTitle {
+  color: black;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: end;
+}
+
+.footerLinkItems {
+  display: grid;
+  padding: 1rem 0.25rem;
+  color: #564f4f;
+  font-size: 14px;
+  gap: 6px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  justify-items: end;
+}
+
+.infoImage {
+  max-width: 100%;
+  opacity: 0;
+}
+
+.securityTitle {
+  display: flex;
+  width: 100%;
+  color: #000 !important;
+  font-size: 80px !important;
+  font-weight: 400 !important;
+  font-style: normal;
+  justify-content: center;
+  font-family: "Buttershine Serif" !important;
+  white-space: pre;
+}
+
+.cTitle1 {
+  display: flex;
+  justify-content: center;
+  font-size: 48px !important;
+  font-weight: 400 !important;
+  color: white !important;
+  font-family: "Buttershine Serif" !important;
+}
+
+.cTitle2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.scrollToTopButton {
+  position: fixed !important;
+  bottom: 30px !important;
+  right: 30px !important;
+  width: 56px !important;
+  height: 56px !important;
+  color: white !important;
+  background-color: rgb(255, 104, 75) !important;
+  border-radius: 50px !important;
+  z-index: 100 !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px !important;
+}
+
+@media screen and (max-width: 560px) {
+  .titleText {
+    font-size: 10vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .partnershipItems {
+    width: 80px !important;
+    margin: 0px !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .partnershipTitle {
+    font-size: 60px !important;
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    margin: 0 3rem;
+  }
+
+  .partnershipTitle1 {
+    font-size: 50px !important;
+  }
+
+  .partnershipTitle2 {
+    font-size: 20px !important;
+  }
+
+  .partnershipItems {
+    width: 150px;
+    margin: 15px;
+  }
+
+  .cTitle1 {
+    font-size: 40px !important;
+  }
+
+  .cTitle2 {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .infoTitle {
+    font-size: 90px !important;
+  }
+
+  .infoTitle2 {
+    font-size: 80px !important;
+  }
+
+  .securityTitle {
+    font-size: 70px !important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .expGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .LinkBorder {
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .LinkTitle {
+    padding: 0 !important;
+  }
+
+  .LinkImage {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .LinkImageTwitter {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .footerLinkTitle {
+    font-size: 18px;
+  }
+
+  .footerLinkItems {
+    font-size: 14px !important;
+  }
+
+  .arrowLink {
+    width: 14px !important;
+  }
+
+  .auditContainer {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    width: 65%;
+  }
+
+  .auditDetails {
+    font-size: 20px !important;
+  }
+
+  .infoTitle {
+    font-size: 80px !important;
+  }
+
+  .infoTitle2 {
+    font-size: 70px !important;
+  }
+
+  .securityTitle {
+    font-size: 50px !important;
+  }
+
+  .cTitle1 {
+    font-size: 32px !important;
+  }
+
+  .cTitle2 {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gridMobilePadding {
+    padding: 10rem 10% !important;
+  }
+
+  .footerLinkContainer {
+    display: grid;
+    justify-content: unset !important;
+  }
+
+  .imgBox {
+    height: 18rem !important;
+    margin-top: 15% !important;
+  }
+
+  .communityContainer {
+    padding: 6rem;
+  }
+
+  .partnershipTitle1 {
+    font-size: 30px !important;
+  }
+
+  .partnershipTitle2 {
+    font-size: 15px !important;
+  }
+
+  .expTitle {
+    align-items: center;
+  }
+
+  .infoTitle {
+    font-size: 70px !important;
+  }
+
+  .infoTitle2 {
+    font-size: 60px !important;
+  }
+
+  .securityTitle {
+    font-size: 40px !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .LinkImage {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .gridMobilePadding {
+    padding: 6rem 5% !important;
+  }
+
+  .expItems {
+    font-size: 16px !important;
+  }
+
+  .footerLinkItems {
+    justify-items: flex-end;
+  }
+
+  .footerLinkTitle {
+    font-size: 14px;
+  }
+
+  .footerLogoContainer {
+    display: grid;
+    align-items: end;
+  }
+
+  .footerImageLinkItems {
+    width: 140%;
+  }
+
+  .footerLeft {
+    padding: 3rem 2rem;
+  }
+
+  .footerRight {
+    width: 100%;
+    padding: 3rem 1rem;
+  }
+
+  .followus {
+    font-size: 14px !important;
+  }
+
+  .auditDetails {
+    font-size: 16px !important;
+  }
+
+  .LinkImageTwitter {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .communityLinkContainer {
+    padding: 2rem 0;
+  }
+
+  .communityContainer {
+    padding: 4rem;
+  }
+
+  .securityTitle {
+    font-size: 26px !important;
+  }
+
+  .arrowLink {
+    width: 10px !important;
+    padding-bottom: 3px;
+  }
+
+  .expTitle {
+    margin-bottom: 2rem !important;
+  }
+
+  .exp1 {
+    margin-right: 3%;
+    font-size: 20px;
+  }
+
+  .partnershipTitle1 {
+    font-size: 20px !important;
+  }
+
+  .infoTitle {
+    font-size: 60px !important;
+    white-space: pre;
+  }
+
+  .infoTitle2 {
+    font-size: 50px !important;
+    white-space: pre;
+  }
+
+  .buttonOverride {
+    font-size: 14px !important;
+    padding: 0.75rem !important;
+  }
+
+  .cTitle1 {
+    font-size: 20px !important;
+  }
+
+  .cTitle2 {
+    font-size: 12px !important;
+  }
+
+  .partnershipContainer {
+    padding: 8rem 0;
+  }
+
+  .partnershipImageContainer {
+    padding: 2rem 0;
+    gap: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .enterAppMobile {
+    margin-top: 3rem !important;
+  }
+
+  .infoTitle {
+    font-size: 42px !important;
+  }
+
+  .infoTitle2 {
+    font-size: 32px !important;
+  }
+
+  .imgBox {
+    margin-top: 10% !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .infoTitle {
+    font-size: 36px !important;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 30px, 0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes fadeSideRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100px, 0px, 0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes fadeSideLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100px, 0px, 0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: auto;
+  }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Ether",
+    "address": "0x45A318273749d6eb00f5F6cA3bC7cD3De26D642A",
+    "symbol": "ETH",
+    "decimals": 18,
+    "chainId": 169,
+    "logoURI": "/tokens/eth.png",
+    "isWhitelisted": true
+  },
+  {
+    "name": "EasySwap token",
+    "address": "0x1394D762d78b5E2B410089A9Fc5FaABeaD6686A1",
+    "symbol": "EASY",
+    "decimals": 18,
+    "chainId": 169,
+    "logoURI": "/tokens/govToken-logo.png"
+  },
+  {
+    "name": "Wrapped Ether",
+    "address": "0x0Dc808adcE2099A9F62AA87D9670745AbA741746",
+    "symbol": "WETH",
+    "decimals": 18,
+    "chainId": 169,
+    "logoURI": "/tokens/weth.png"
+  },
+  {
+    "address": "0xb73603C5d87fA094B7314C74ACE2e64D165016fb",
+    "chainId": 169,
+    "name": "USDC Token",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/usdc.jpg"
+  },
+  {
+    "name": "USDT Token",
+    "chainId": 169,
+    "address": "0xf417F5A458eC102B90352F697D6e2Ac3A3d2851f",
+    "symbol": "USDT",
+    "decimals": 6,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/usdt.jpg"
+  },
+  {
+    "name": "DAI Token",
+    "chainId": 169,
+    "address": "0x1c466b9371f8aBA0D7c458bE10a62192Fcb8Aa71",
+    "symbol": "DAI",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/list/master/logos/token-logos/token/dai.jpg"
+  }
+]

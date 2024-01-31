@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/*FIXME*/
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url("/calendar.svg") no-repeat;
+  background-size: contain;
+  display: block;
+  border-width: thin;
+  position: absolute;
+  left: -88px;
+  z-index: 9;
+}
+
+button {
+  text-transform: none !important;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter/Inter-VariableFont_slnt,wght.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Buttershine Serif';
+  src: url('/fonts/Buttershine/BUTTERSHINE SERIF.otf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}

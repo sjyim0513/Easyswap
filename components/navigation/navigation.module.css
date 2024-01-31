@@ -1,0 +1,378 @@
+/* .navigationContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: transparent;
+  border: 0 !important;
+  position: relative;
+  height: 2vw;
+}
+
+.subNavItem {
+  width: fit-content;
+  margin: 8px auto;
+} */
+
+.icon {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 5px 24px 5px 20px;
+}
+
+/* .navigationHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.navigationContent {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.navigationContentNavs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+} */
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: #f1bb76;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdownContent a {
+  float: none;
+  color: black;
+  padding: 12px 16px 12px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdownContent a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.navSubGreen {
+  font-size: 12px !important;
+  color: green !important;
+  text-decoration: none;
+  padding: 2px !important;
+}
+/* .navToggles {
+  min-height: 50px;
+  display: inline-flex;
+  border-radius: 10px;
+  position: relative;
+} */
+
+.navToggles:hover {
+  color: #f1bb76;
+}
+
+.circleGreenContainer {
+  position: relative;
+  display: inline-block; /* This makes sure the container doesn't take the full width */
+}
+
+.circleGreenContainer::before {
+  content: "";
+  position: absolute;
+  left: -3px; /* Adjust this value to control the spacing between text and circle */
+  top: 60%; /* Adjust this value to vertically center the circle */
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: green;
+  width: 5px; /* Adjust this value to control the circle size */
+  height: 5px; /* Adjust this value to control the circle size */
+}
+
+.circleGreen {
+  color: green;
+  font-size: 11px !important;
+  font-weight: 600;
+  margin: 4px;
+}
+
+.circleOrangeContainer {
+  position: relative;
+  display: inline-block; /* This makes sure the container doesn't take the full width */
+}
+
+.circleOrangeContainer::before {
+  content: "";
+  position: absolute;
+  left: -3px; /* Adjust this value to control the spacing between text and circle */
+  top: 60%; /* Adjust this value to vertically center the circle */
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #eb7e00;
+  width: 5px; /* Adjust this value to control the circle size */
+  height: 5px; /* Adjust this value to control the circle size */
+}
+
+.circleOrange {
+  color: #eb7e00;
+  font-size: 11px !important;
+  font-weight: 600;
+  margin: 4px;
+}
+
+/* .navButton {
+  border-radius: 20px !important;
+  text-transform: capitalize !important;
+  border: 1px solid transparent !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000 !important;
+} */
+
+/* .navButton:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+} */
+
+/* .navToggles .dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  border-radius: 20px;
+  background-color: #000000;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+} */
+
+/* .navToggles:hover .dropdownMenu {
+  display: block;
+}
+
+.testChange {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: #f1bb76 !important;
+  text-decoration-line: underline;
+} */
+
+@media screen and (max-width: 1200px) {
+  .navigationContainer {
+    background: transparent;
+    position: fixed;
+    align-self: center;
+    min-height: 60px;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0px !important;
+    border-radius: 0px !important;
+    z-index: 10020;
+  }
+
+  .navigationContent {
+    /* display: none; */
+    background: transparent;
+    position: fixed;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    border-bottom: 1px solid rgba(126, 153, 176, 0.2);
+  }
+
+  .menuIcon {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    display: flex;
+    transform: scale(0.8);
+  }
+
+  .navButton {
+    border-radius: 10px !important;
+    padding: 8px 10px 8px 10px !important;
+    text-transform: capitalize !important;
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+    font-size: 1.3vw;
+    color: #000000 !important;
+  }
+
+  .subtitleText {
+    padding-left: 0px;
+    font-size: 15px !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background-color: white;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.03);
+  display: flex;
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.dropdownMenu .show {
+  display: block;
+}
+
+.dropdownMenuItem {
+  padding: 12px;
+  padding-left: 5px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+  justify-content: center;
+  font-size: 14px !important;
+}
+
+.dropdownMenuItem:hover {
+  color: #f1bb76;
+}
+
+@media screen and (max-width: 500px) {
+  .smallVersion,
+  .sectionDivider {
+    display: none;
+  }
+
+  .navigationSubOptionContainer {
+    text-align: center !important;
+    justify-content: center;
+    padding: 0 !important;
+  }
+
+  .sectionText {
+    margin: 10px 0 10px 0px !important;
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .navToggles {
+    min-height: 30px;
+  }
+
+  .navButton {
+    border-radius: 10px !important;
+    margin: 8px 10px 8px 10px !important;
+    text-transform: capitalize !important;
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+    font-size: 1.3vw;
+    color: #000000 !important;
+  }
+
+  .subtitleText {
+    padding-left: 0px;
+    font-size: 12px !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  .appLogo {
+    transform: scale(5);
+    position: fixed;
+    left: 70px;
+    top: 18px;
+    cursor: pointer;
+  }
+
+  .testChange {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #5f27ff !important;
+    text-decoration-line: underline;
+  }
+
+  .navigationContent {
+    background: transparent;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(126, 153, 176, 0.2);
+  }
+}

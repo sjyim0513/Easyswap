@@ -1,0 +1,731 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  margin-top: 90px;
+  max-width: 485px;
+  width: calc(100% - 180px);
+}
+
+.retain {
+  position: relative;
+}
+
+.smallerText {
+  font-size: 12px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.helpIcon {
+  border: 1px solid rgba(104, 108, 122, 0.2);
+  border-radius: 50px;
+  width: 26px;
+  height: 26px;
+  font-weight: 700 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  cursor: help !important;
+}
+
+.topLeftButton,
+.bottomLeftButton {
+  border-radius: 8px 8px 0 0 !important;
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+.inputsContainer {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px 0px; */
+  padding: 0px 24px;
+
+  /* flex: 1; */
+}
+
+.multiApproval {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 12px;
+}
+
+.multiApprovalButton {
+  min-width: auto;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.accountButton {
+  margin-right: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  margin-left: 14px !important;
+  padding-left: 26px !important;
+  padding-right: 26px !important;
+  font-size: 1.3vw !important;
+  background: transparent;
+  border-radius: 90px !important;
+  color: rgb(255, 174, 128) !important;
+}
+
+.textField {
+  padding: 0.25rem;
+  background-color: #ffefe7;
+  border-radius: 14px;
+  margin-bottom: 6px;
+}
+
+.largeInput {
+  font-size: 30px !important;
+}
+
+.activeIcon {
+  height: 2px;
+  width: 100%;
+  background: transparent;
+  background-size: 400% 400%;
+  animation: gradient 35s ease infinite;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: none;
+}
+
+.searchContainer {
+  padding: 24px;
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.assetSearchResults {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  min-width: 390px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.inputTitleContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.inputTitle {
+  padding-bottom: 16px;
+  margin-left: 6px;
+}
+
+.inputBalance {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.inputBalanceText {
+  font-weight: 200 !important;
+  font-size: 14px !important;
+  color: #000000;
+  margin-right: 6px !important;
+}
+
+.balances {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 12px;
+  padding-bottom: 15px;
+}
+
+.value {
+  cursor: pointer;
+  font-size: 14px !important;
+}
+
+.inputTitleText {
+  font-size: 15px !important;
+  margin-top: 10px !important;
+}
+
+.infoContainer {
+  display: flex;
+}
+
+.infoIcon {
+  border: 1px solid rgba(128, 128, 128, 0.8);
+  color: rgba(128, 128, 128, 0.8);
+  border-radius: 30px;
+  font-size: 40px !important;
+  padding: 6px;
+  margin-right: 12px !important;
+}
+
+.infoField {
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  margin-top: 32px;
+}
+
+.infoText {
+  color: rgba(128, 128, 128, 0.8);
+  font-size: 14px !important;
+}
+
+.actionsContainer {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: 1fr;
+  /* border-left: 1px solid rgba(104, 108, 122, 0.25); */
+  padding: 0px 24px;
+  width: 100%;
+  height: 100%;
+  margin-top: 12px;
+}
+
+.actionButtonText {
+  text-transform: capitalize !important;
+  font-weight: 700 !important;
+}
+
+.autocompleteContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.reAddPadding {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.loadingCircle {
+  margin-left: 6px !important;
+  color: #fff !important;
+}
+
+.toggleButtons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 9px 9px 0 0;
+  background: rgb(23, 52, 72) !important;
+}
+
+.toggleButtons:hover {
+  background: #2e2254 !important;
+}
+
+.button {
+  border-radius: 0px !important;
+  flex: 1;
+  /* border-bottom: 1px solid rgba(104, 108, 122, 0.25) !important; */
+  transition: none !important;
+  opacity: 1;
+  background: none !important;
+}
+
+/* .buttonActive {
+  border-radius: 0px !important;
+  flex: 1;
+} */
+
+.amountAndPercent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 12px;
+  padding-bottom: 12px;
+}
+
+.actionsContainerWithdraw {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: 1fr;
+  padding: 0px 24px;
+  width: 240px;
+}
+
+.extraTF {
+  padding-bottom: 0px;
+}
+
+.buttonOverride {
+  background: transparent;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  border-radius: 90px;
+}
+
+.buttonOverride:hover {
+  background: #666464;
+}
+
+.swapIconContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  height: 0px;
+}
+
+.swapIconSubContainer {
+  background: #161b2c;
+  border-radius: 9px;
+  height: 38px;
+  z-index: 1;
+}
+
+.swapIcon {
+  cursor: pointer;
+  padding: 6px;
+  font-size: 30px !important;
+  background: rgb(33, 43, 72);
+  margin: 4px;
+  border-radius: 6px;
+}
+
+.error {
+  border: 1px solid #dc3545;
+}
+
+.massiveInputContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.massiveInputAssetSelect {
+  display: flex;
+  width: 100%;
+  border-radius: 16px;
+  padding: 1px;
+}
+
+.massiveInputAmount {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.p_4 {
+  padding: 4px;
+}
+
+.assetSelectMenuItem {
+  margin: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.massiveInputAddress {
+  min-width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.displayAssetIconSmall {
+  height: 36px;
+  border-radius: 30px;
+  background: #ffffff;
+}
+
+.displaySelectContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 6px 18px rgb(0 0 0/8%);
+  margin-left: 1rem;
+}
+
+.displayDualIconContainer {
+  display: flex;
+}
+
+.displayDualIconContainerConfirm {
+  width: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.displayDualIconContainerSmall {
+  margin-right: 1rem;
+}
+
+.displayAssetIcon {
+  border-radius: 50px;
+  height: 24px;
+}
+
+.img1Logo {
+  border-radius: 100px;
+  height: 24px;
+}
+
+.img2Logo {
+  z-index: 1;
+  border-radius: 100px;
+  height: 24px;
+}
+
+.doubleImages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px 20px;
+  box-sizing: content-box;
+}
+
+.fillerText {
+  flex: 1;
+  font-size: 16px !important;
+  width: 100%;
+}
+
+.typoContainer {
+  width: auto;
+}
+
+.mediumInputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+  background: #272826;
+}
+
+.mediumInputAssetSelect {
+  width: 74px;
+  min-height: 50px;
+  height: 100%;
+}
+
+.mediumInputAmount {
+  flex: 1;
+  height: 100%;
+}
+
+.mediumInputAddress {
+  min-width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.mediumdisplaySelectContainer {
+  padding: 12px;
+  height: 74px;
+}
+
+.mediumdisplayDualIconContainer {
+  width: 50px;
+  position: relative;
+}
+
+.mediumdisplayAssetIcon {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 50px;
+  background: rgb(33, 43, 72);
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+.mediumInput {
+  font-size: 32px !important;
+}
+
+.receiveAssets {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4px;
+}
+
+.depositInfoContainer {
+  margin-top: 12px;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.withdrawInfoContainer {
+  margin-top: 8px;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.depositInfoHeading {
+  width: 100%;
+  padding-bottom: 12px !important;
+  font-size: 15px !important;
+  line-height: 23px !important;
+  text-align: center;
+  color: #7e99b0 !important;
+}
+
+.highlight {
+  color: #000 !important;
+  font-weight: 600 !important;
+}
+
+.priceInfos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+  width: 100%;
+}
+
+.createPriceInfos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px;
+  width: 100%;
+}
+
+.priceInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0px;
+}
+
+.priceInfo > .title {
+  font-weight: bold !important;
+  font-size: 14px !important;
+  padding: 6px 0px;
+}
+
+.priceInfo > .text {
+  font-size: 14px !important;
+}
+
+.assetSelectBalance {
+  flex: 1;
+  margin-left: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.assetSelectMenu {
+  padding: 0.75rem 0.5rem !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid #212b48;
+  border-radius: 10px;
+  width: calc(100% - 52px);
+  margin: 25px 25px 0px 25px;
+  position: relative;
+  min-height: 60px;
+  cursor: pointer;
+}
+
+.backButton {
+  position: absolute !important;
+  left: 5px !important;
+  top: 8px;
+}
+
+.backIcon {
+  color: #000 !important;
+}
+
+.titleText {
+  font-size: 18px !important;
+  letter-spacing: normal !important;
+}
+
+.mediumInputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+  background: transparent;
+}
+
+.mediumInputAssetSelect {
+  width: 74px;
+  min-height: 50px;
+  height: 100%;
+}
+
+.mediumInputAmount {
+  flex: 1;
+  height: 100%;
+}
+
+.mediumInputAddress {
+  min-width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.mediumdisplaySelectContainer {
+  padding: 12px;
+  height: 74px;
+}
+
+.mediumdisplayDualIconContainer {
+  width: 50px;
+  position: relative;
+}
+
+.mediumdisplayAssetIcon {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 50px;
+  background: rgb(33, 43, 72);
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+.mediumInput {
+  font-size: 32px !important;
+}
+
+.toggles {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.toggleOption {
+  padding: 24px;
+}
+
+.toggleOption:nth-child(1) {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.toggleOption:nth-child(2) {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.toggleOption:hover {
+  background: rgb(23, 52, 72) !important;
+}
+
+.toggleOption.active {
+  background: rgb(23, 52, 72) !important;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.toggleOptionText {
+  text-align: center;
+}
+
+.menuOption {
+  display: flex !important;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center !important;
+}
+
+.smallerText {
+  font-size: 15px !important;
+  color: #000000;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.manageLocalContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.assetSelectActions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 1280px) {
+  .actionsContainer {
+    border-left: 0px solid rgba(104, 108, 122, 0.25) !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    margin-top: 0px;
+  }
+
+  .buttonWrap {
+    margin-top: 20px !important;
+  }
+
+  .actionsContainer {
+    border-left: 0px solid rgba(104, 108, 122, 0.25);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    margin-top: 0px;
+    width: calc(100% - 60px);
+  }
+
+  .helpIcon {
+    display: none;
+  }
+}

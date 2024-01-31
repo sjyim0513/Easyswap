@@ -1,0 +1,545 @@
+.container {
+  max-width: 1400px;
+  width: calc(100% - 180px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.custom-linear-progress-bar {
+  background-color: orange;
+  animation: none;
+  /* 또는 다른 애니메이션을 여기에 정의하세요 */
+}
+
+.descriptionTimerBox {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.descriptionBox {
+  text-align: left;
+  gap: 0.25rem;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.linearPeriod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  width: -webkit-fill-available;
+}
+
+.timerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(
+    180deg,
+    #36f4e9 0%,
+    rgba(61, 132, 128, 0.79) 78.54%,
+    rgba(248, 159, 107, 0.73) 100%
+  );
+  padding: 10rem 0rem;
+  margin-bottom: 4rem;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.timerBox_title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.167;
+  color: white;
+  white-space: pre;
+}
+
+.infoButton {
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 30px;
+  padding: 0.5rem 2rem;
+  color: white;
+  font-size: 20px;
+}
+
+.infoButton:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.timerLargerText {
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+}
+
+.countdownContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translate(145%, 455%);
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.countdownUpContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(-60%, -58%) rotate(-20deg);
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.countdownDownContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(-60%, 58%) rotate(20deg);
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.timerNextLargerText {
+  font-size: 50px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  min-width: 81px;
+  transform: rotate(20deg);
+}
+
+.timerBeforeLargerText {
+  font-size: 50px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  min-width: 81px;
+  transform: rotate(-20deg);
+}
+
+.timerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  min-width: 360px;
+}
+
+.timerText {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 44px;
+  color: white;
+  margin-right: 2.5rem;
+  display: flex;
+  padding-top: 5px;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.smallText {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 15px 0 0 !important;
+  padding: 18px 0;
+}
+
+.tableContainer {
+  border: 1px solid rgba(126, 153, 176, 0.2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  min-width: 560px !important;
+  background: transparent !important;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translatex(-50%);
+  border-radius: 50px !important;
+  z-index: 20 !important;
+}
+
+.actionButton {
+  width: 200px;
+}
+
+.actionButtonText {
+  font-size: 15px !important;
+  text-transform: capitalize !important;
+  font-weight: 700 !important;
+  color: #ffffff;
+}
+
+.loadingCircle {
+  margin-left: 6px !important;
+}
+
+.infoSection {
+  display: flex;
+  padding: 10px 24px;
+  align-items: center;
+  justify-content: flex-end;
+  background: transparent;
+}
+
+.helpText {
+  margin-left: 6px !important;
+  font-size: 20px !important;
+  color: #52af77 !important;
+}
+
+.errorText {
+  margin-left: 6px !important;
+  font-size: 20px !important;
+  color: #da0052 !important;
+}
+
+.buttonOverride {
+  background: transparent !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  border-radius: 90px;
+}
+
+.buttonOverride:hover {
+  background: #666464;
+}
+
+.buttonOverrideFixed {
+  background: transparent !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  z-index: 20 !important;
+  border-radius: 90px;
+}
+
+.buttonOverrideFixed:hover {
+  background: #666464;
+}
+
+.tokenIDContainer {
+  border: 1px solid rgba(104, 108, 122, 0.25);
+  border-radius: 12px;
+}
+
+.searchContainer {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  padding: 0px 0px !important;
+  background: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.topBarContainer {
+  padding: 24px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.mediumInputContainer {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+  background: transparent;
+  padding-left: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mediumInputAssetSelect {
+  width: 74px;
+  min-height: 50px;
+  height: 100%;
+}
+
+.mediumInputAmount {
+  flex: 1;
+  height: 100%;
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.mediumInputAddress {
+  min-width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.mediumInput {
+  font-size: 32px !important;
+}
+
+.menuOption {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: calc(100% - 24px);
+}
+
+.smallerText {
+  font-size: 12px !important;
+}
+
+.saleDetailsContainer {
+  /* 다른 스타일 속성들... */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid rgba(126, 153, 176, 0.2);
+  border-radius: 30px;
+  margin-top: 20px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+/* 제목을 왼쪽 정렬 */
+.saleDetailsTitle {
+  text-align: left;
+}
+
+/* 내용을 왼쪽 정렬 */
+.saleDetailsContent {
+  text-align: left;
+}
+
+.buttonHover {
+  background-color: transparent;
+}
+
+.buttonHover:hover {
+  background-color: white;
+}
+
+.linkHover {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 0;
+}
+
+.linkHover:hover {
+  color: #ff9a5f;
+}
+
+.tableItemStyle {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.tableItemStyleWhite {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  color: white !important;
+  padding: 1rem 0;
+}
+
+.titleHR {
+  background-color: #ff9a5f;
+  height: 7px;
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.columnCenterStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tableCellStyle {
+  font-size: 16px !important;
+  display: flex;
+  color: gray !important;
+}
+
+.tableTitle {
+  font-size: 40px !important;
+  font-weight: 800 !important;
+  text-align: left;
+  color: #ff9a5f !important;
+  margin-bottom: 2.5rem !important;
+}
+
+.claimTotalRaised {
+  font-size: 24px !important;
+  margin-left: 1rem !important;
+}
+
+.SaleClaimMobile {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .timerLargerText {
+    font-size: 40px;
+  }
+
+  .timerText {
+    font-size: 16px;
+    margin-right: 1.5rem;
+  }
+
+  .container {
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 80px;
+    padding: 0 0 10px 0px;
+  }
+
+  .tableItemStyle {
+    font-size: 20px !important;
+  }
+
+  .tableCellStyle {
+    font-size: 14px !important;
+  }
+
+  .timerText {
+    font-size: 28px;
+  }
+
+  .claimTotalRaised {
+    font-size: 18px !important;
+    margin-left: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .gridMobile {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .container {
+    padding: 0 0 60px 0px;
+  }
+
+  .tableCellStyle {
+    font-size: 10px !important;
+  }
+
+  .SaleClaimMobile {
+    display: block !important;
+  }
+
+  .actionButtons {
+    padding: 10px 0;
+    min-width: 100% !important;
+    background: #ffffff !important;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    transform: translatex(0);
+    border-radius: 0 !important;
+    border-top: 1px solid rgba(126, 153, 176, 0.2);
+  }
+
+  .timerText {
+    font-size: 18px;
+  }
+
+  .searchContainer {
+    padding: 0px !important;
+  }
+
+  .timerLargerText {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .timerLargerText {
+    font-size: 24px;
+  }
+
+  .timerText {
+    font-size: 16px;
+    margin-right: 0.5rem;
+  }
+
+  .timerContainer {
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .buttonOverrideFixed {
+    min-width: 100% !important;
+    max-height: 48px;
+  }
+
+  .container {
+    width: calc(100% - 40px);
+    padding: 0 0 30px 0px;
+  }
+
+  .saleDetailsContainer {
+    overflow-x: overlay;
+  }
+
+  .fontResizeMobile {
+    font-size: 16px !important;
+  }
+
+  .gapRemoved {
+    gap: 0 !important;
+  }
+
+  .gridMobile {
+    padding: 0 !important;
+  }
+
+  .infoButton {
+    font-size: 18px;
+  }
+
+  .tableItemStyle {
+    font-size: 16px !important;
+  }
+
+  .tableItemStyleWhite {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .timerLargerText {
+    font-size: 20px;
+  }
+
+  .timerContainer {
+    align-items: baseline;
+  }
+
+  .makeCenter {
+    align-items: center !important;
+  }
+}

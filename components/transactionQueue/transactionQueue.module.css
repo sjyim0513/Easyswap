@@ -1,0 +1,137 @@
+.headingContainer {
+  padding: 24px;
+}
+
+.heading {
+  font-size: 24px !important;
+  width: 100%;
+  text-align: center;
+}
+
+.transactionsContainer {
+  border-radius: 12px;
+  border: 1px solid #000;
+  padding: 24px;
+  margin-bottom: 12px;
+}
+
+.transaction {
+  padding: 8px 12px;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.transaction:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.closeIconbutton {
+  position: absolute !important;
+  right: 0px;
+  top: 0px;
+}
+
+.transactionInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.capitalise {
+  text-transform: capitalize !important;
+}
+
+.transaactionHash {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.orangeIcon {
+  color: #ffc512 !important;
+}
+
+.greenIcon {
+  color: #49a766 !important;
+}
+
+.redIcon {
+  color: #dc3545 !important;
+}
+
+.transactionExpanded {
+  height: auto;
+  overflow: scroll;
+}
+
+.errorText {
+  color: #dc3545 !important;
+  padding-top: 12px !important;
+}
+
+.animClass {
+  width: 130px;
+  margin: auto;
+  padding: 30px 0 20px 0;
+}
+
+.dialogScale {
+  max-width: 640px;
+  margin: auto;
+  text-align: center;
+}
+
+.transactionDescription {
+  text-align: left;
+  white-space: pre-wrap;
+  width: 100%;
+  line-height: 22px !important;
+}
+
+.successDialog {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px !important;
+}
+
+.successTitle {
+  padding: 0 40px !important;
+  text-align: center !important;
+  margin: 20px 0 10px 0 !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+}
+
+.successText {
+  padding: 0 40px !important;
+  text-align: center !important;
+  line-height: 1.5rem !important;
+  margin-bottom: 40px !important;
+  color: rgba(126, 153, 176, 0.8) !important;
+}
+
+.viewDetailsText {
+  background: none;
+  margin: 10px auto 20px auto !important;
+  font-size: 14px !important;
+}
+
+.viewDetailsText a {
+  color: #000 !important;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  align-items: center;
+}
+
+.viewDetailsText a:hover {
+  text-decoration: underline;
+}
+
+.newWindowIcon {
+  font-size: 16px !important;
+  margin: 0px 4px;
+}

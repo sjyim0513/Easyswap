@@ -1,0 +1,245 @@
+.container {
+  max-width: 1400px;
+  width: calc(100% - 180px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  margin-bottom: 60px;
+  padding: 0px 0 10px 0px;
+}
+
+.descriptionBox {
+  align-self: flex-start;
+  color: #000;
+  text-align: left;
+  gap: 0.25rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.container > .descriptionText {
+  color: #000;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  text-align: left;
+  align-self: left;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+}
+
+.title {
+  font-size: 20px !important;
+  margin-bottom: 24px !important;
+}
+
+.helpText {
+  color: #000;
+  margin: 0 15px 0 0 !important;
+  padding: 15px 0;
+  display: flex;
+  justify-content: left;
+  white-space: pre;
+}
+
+.tableContainer {
+  border: 1px solid #000;
+  box-shadow: 0 10px 15px -3px #000, 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  margin: 0 auto;
+}
+
+.assetTableRow {
+  cursor: pointer !important;
+}
+
+.toolbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.searchContainer {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 30px !important;
+}
+
+.textField {
+  height: 100%;
+}
+
+.buttonOverride {
+  background: transparent !important;
+  color: #000 !important;
+  font-weight: 700 !important;
+  min-width: 200px !important;
+  border-radius: 10px;
+  padding: 6px 16px !important;
+  height: fit-content;
+}
+
+.filterContainer {
+  background: #212b48;
+  min-width: 300px;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(126, 153, 176, 0.2);
+}
+
+.filterListTitle {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(126, 153, 176, 0.2);
+}
+
+.filterButton {
+  margin-right: 30px !important;
+}
+
+.claimButtonOnVotingRewards {
+  gap: 0.5rem;
+}
+
+.mediumInputContainer {
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+  background: transparent;
+  min-height: 60px;
+}
+
+.mediumInputAssetSelect {
+  width: 74px;
+  min-height: 50px;
+  height: 100%;
+}
+
+.mediumInputAmount {
+  width: fit-content;
+  height: 35px;
+}
+
+.mediumInputAddress {
+  min-width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.mediumInput {
+  font-size: 32px !important;
+}
+
+.menuOption {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+
+.smallerText {
+  font-size: 12px !important;
+}
+
+.disclaimerContainer {
+  display: absolute;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.disclaimer {
+  font-size: 15px !important;
+  font-weight: 200 !important;
+  border: 1px solid #000 !important;
+  border-radius: 10px;
+  background: transparent !important;
+  padding: 21.5px !important;
+}
+
+.accountButton {
+  margin-right: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  margin-left: 14px !important;
+  padding-left: 26px !important;
+  padding-right: 26px !important;
+  font-size: 1.3vw !important;
+  background: transparent;
+  border-radius: 90px !important;
+  color: rgb(255, 174, 128) !important;
+}
+
+.titleHR {
+  background-color: #ff9a5f;
+  height: 7px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.typomargin {
+  margin-bottom: 13px;
+  margin-top: 13px;
+  gap: 1rem;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: calc(100% - 40px);
+    margin: auto;
+    padding: 0 0 10px 0px;
+    margin-bottom: 20px;
+  }
+
+  .accountButton {
+    max-width: 11vw;
+    /* background-color: rgba( 255, 255, 255, 0) !important; */
+    border-width: 1px !important;
+    border-style: solid;
+    max-height: 4vh;
+    border-color: #000;
+    border-radius: 90px !important;
+    display: flex;
+    align-items: center;
+    margin-left: 0 !important;
+  }
+
+  .typomargin {
+    margin-bottom: 13px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .claimButtonOnVotingRewards {
+    flex-direction: column;
+    align-items: end !important;
+  }
+
+  .mediumInputContainer {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .mediumInputContainer {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .typomargin {
+    flex-direction: column;
+  }
+}

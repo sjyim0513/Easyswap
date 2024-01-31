@@ -1,0 +1,862 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 90px;
+  max-width: 600px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: white !important;
+}
+
+.retain {
+  position: relative;
+  min-height: 71rem;
+}
+
+.smallerText {
+  font-size: 15px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.smallestText {
+  font-size: 15px !important;
+  margin-top: 0px !important;
+  margin-bottom: 5px !important;
+}
+
+.nextTo {
+  display: flex;
+  align-items: center;
+}
+
+.paddTiny {
+  padding-right: 3px !important;
+}
+
+.topLeftButton,
+.bottomLeftButton {
+  border-radius: 12px !important;
+  width: auto;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+.inputsContainer {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px 0px; */
+  padding: 0px 10px;
+  width: auto;
+  /* flex: 1; */
+}
+
+.multiApproval {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 12px;
+}
+
+.multiApprovalButton {
+  min-width: auto;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.textField {
+  margin-top: 3px;
+  margin-bottom: 2px;
+  position: relative;
+  grid-column: span 2;
+}
+
+.largeInput {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+
+  z-index: 2;
+}
+
+.activeIcon {
+  height: 2px;
+  width: 100%;
+  background-size: 400% 400%;
+  animation: gradient 35s ease infinite;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.inputTitleContainer {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.inputTitle {
+  padding-bottom: 16px;
+  margin-left: 6px;
+}
+
+.inputBalance {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.inputBalanceText {
+  font-weight: 200 !important;
+  font-size: 14px !important;
+  color: #000000;
+}
+
+.inputBalanceTextSlippage {
+  font-weight: 200 !important;
+  font-size: 15px !important;
+  color: #ffffff;
+}
+
+.balances {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 12px;
+  padding-bottom: 15px;
+}
+
+.value {
+  cursor: pointer;
+  font-size: 14px !important;
+}
+
+.inputTitleText {
+  font-size: 15px !important;
+  margin-top: 10px !important;
+}
+
+.infoContainer {
+  display: flex;
+}
+
+.infoIcon {
+  border: 1px solid rgba(128, 128, 128, 0.8);
+  color: rgba(128, 128, 128, 0.8);
+  border-radius: 30px;
+  font-size: 40px !important;
+  padding: 6px;
+  margin-right: 12px !important;
+}
+
+.infoField {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.infoText {
+  color: rgba(128, 128, 128, 0.8);
+  font-size: 14px !important;
+}
+
+.slpbuttonContainer {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 8px;
+  justify-content: center;
+}
+
+.slpbuttonBalanced {
+  padding: 12px 24px !important;
+  margin: 0 auto !important;
+  border-color: #000000 !important;
+  background-color: #ffefe7 !important;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.slpbuttonBalanced:hover {
+  background-color: #fdd3be !important;
+  box-shadow: none !important;
+}
+
+.slpbutton {
+  background-color: #ffefe7 !important;
+  padding: 12px 24px !important;
+  width: fit-content !important;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.slpbutton:hover {
+  background-color: #fdd3be !important;
+  box-shadow: none !important;
+}
+
+.balanceButton {
+  border: 1px solid rgba(0, 0, 0, 0.4) !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px !important;
+}
+
+.actionsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: 100%;
+  margin-top: 1.5rem;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 0rem 1rem;
+}
+
+.actionsContainerFlex {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 1.5rem;
+  column-gap: 1rem;
+  justify-content: space-around;
+}
+
+.thumb {
+  color: rgb(255, 174, 128);
+}
+
+.track {
+  background-color: rgb(255, 174, 128) !important;
+}
+
+.actionButtonText {
+  text-transform: capitalize !important;
+  font-weight: 500 !important;
+  color: black !important;
+  font-size: 14px !important;
+}
+
+.autocompleteContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.reAddPadding {
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.loadingCircle {
+  margin-left: 6px !important;
+  color: #000 !important;
+}
+
+.toggleButtons {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  position: absolute;
+  top: 8%;
+  left: calc(50% - 600px);
+  height: fit-content;
+  background: transparent !important;
+}
+
+.button {
+  border-radius: 10px !important;
+  flex: 1;
+  /* border-bottom: 1px solid rgba(104, 108, 122, 0.25) !important; */
+  transition: none !important;
+  opacity: 1;
+  background: none !important;
+  color: #ffffff !important;
+}
+
+/* .buttonActive {
+  border-radius: 0px !important;
+  flex: 1;
+} */
+
+.amountAndPercent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 12px;
+  padding-bottom: 12px;
+}
+
+.extraTF {
+  padding-bottom: 0px;
+}
+
+.typeMenu {
+  line-height: 1.5 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: rgb(115, 115, 115) !important;
+  padding: 0.5rem 1rem;
+}
+
+.buttonActive .typeMenu {
+  color: rgb(255, 174, 128) !important;
+  font-weight: bold !important;
+}
+
+.button .typeMenu {
+  color: rgb(115, 115, 115) !important;
+}
+
+.button .typeMenu:hover {
+  color: rgb(255, 174, 128) !important;
+}
+
+.buttonOverride {
+  font-weight: 700 !important;
+}
+
+.buttonOverride:disabled {
+  background: rgba(0, 0, 0, 0.25) !important;
+  color: #666666 !important;
+  cursor: not-allowed;
+}
+
+.buttonOverride:hover {
+  background: #918d8d;
+}
+
+.swapIconContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  margin-top: -6px;
+}
+
+.swapIconSubContainer {
+  border-radius: 9px;
+  height: 38px;
+  z-index: 1;
+}
+
+.swapIcon {
+  cursor: pointer;
+  padding: 6px;
+  font-size: 38px !important;
+  background: rgb(255, 250, 239);
+  margin: 4px;
+  border-radius: 30px;
+  color: #000000;
+  border: 4px solid rgb(255, 255, 255);
+}
+
+.error {
+  border: 1px solid #dc3545;
+}
+
+.massiveInputContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  width: 100%;
+  background: #ffefe7;
+  padding: 5px;
+}
+
+.massiveInputAssetSelect {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  border-radius: 16px;
+  margin-top: 12px;
+  margin-left: 15px;
+  padding: 2px;
+  box-shadow: 0 6px 18px rgb(0 0 0/8%);
+}
+
+.massiveInputAmount {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.massiveInputAddress {
+  min-width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.displaySelectContainer {
+  cursor: pointer;
+}
+
+.displayDualIconContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  position: relative;
+}
+
+.displayAssetIcon {
+  border-radius: 50px;
+  background: #ffffff;
+  height: 24px;
+}
+
+.displayAssetIcon2 {
+  border-radius: 50px;
+  background: #ffffff;
+  height: 24px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+.img1Logo {
+  position: absolute;
+  top: 3px;
+  border-radius: 50px;
+  background: rgb(25, 33, 56);
+  left: 0px;
+}
+
+.img2Logo {
+  position: absolute;
+  top: 3px;
+  border-radius: 50px;
+  background: rgb(25, 33, 56);
+  left: 23px;
+  z-index: 1;
+}
+
+.mediumInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  margin-top: 10px;
+  width: 100%;
+  align-items: center;
+  background: #ffefe7;
+  min-height: 50px;
+  z-index: 1;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+
+.mediumInputAssetSelect {
+  width: 74px;
+  min-height: 50px;
+  height: 100%;
+}
+
+.mediumInputAmount {
+  flex: 1;
+  height: 100%;
+  padding: 4px;
+  padding-left: 0;
+  border-radius: 10px;
+  color: #000000;
+}
+
+.mediumInputAddress {
+  min-width: 100%;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.settingBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.settingModal {
+  height: auto;
+  background-color: #fff;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.modalContent {
+  display: grid;
+  height: 100%;
+}
+
+.mediumdisplaySelectContainer {
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.mediumdisplayDualIconContainer {
+  width: 50px;
+  position: relative;
+}
+
+.mediumdisplayAssetIcon {
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+  height: 32px;
+}
+
+.mediumInput {
+  font-size: 20px !important;
+}
+
+.receiveAssets {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4px;
+}
+
+.depositInfoContainer {
+  margin-top: 12px;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.withdrawInfoContainer {
+  margin-top: 8px;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.depositInfoHeading {
+  width: 100%;
+  font-weight: 700 !important;
+  padding-bottom: 6px !important;
+  border-bottom: 1px solid rgba(126, 153, 176, 0.2);
+  font-size: 14px !important;
+}
+
+.priceInfos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+  width: 100%;
+}
+
+.createPriceInfos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px;
+  width: 100%;
+}
+
+.priceInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0px 24px 0px;
+}
+
+.priceInfo > .title {
+  font-weight: bold !important;
+  font-size: 14px !important;
+  padding-bottom: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 22vw;
+}
+
+.priceInfo > .text {
+  font-size: 14px !important;
+  color: #7e99b0;
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: calc(100% - 50px);
+  margin: 20px 25px 0 25px;
+  position: relative;
+  min-height: 60px;
+}
+
+.backButton {
+  position: absolute !important;
+  left: 5px !important;
+  border-radius: 5px !important;
+}
+
+.backIcon {
+  color: rgb(0, 0, 0) !important;
+  width: 20px !important;
+}
+
+.titleText {
+  font-size: 18px !important;
+  letter-spacing: normal !important;
+  font-weight: bold !important;
+}
+
+.advancedToggleContainer {
+  padding: 0px 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.some > span {
+  font-size: 13px !important;
+}
+
+.menuOption {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: calc(100% - 24px);
+  padding: 6px 12px;
+}
+
+.smallerText {
+  font-size: 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 1px 5px !important;
+  font-weight: 500 !important;
+}
+
+.assetSelectMenuItem {
+  display: flex;
+  align-items: center;
+}
+
+.assetTypo {
+  align-items: center;
+  gap: 0.25rem;
+  display: flex;
+  padding: 0 0.25rem;
+  justify-content: flex-end;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  margin-left: 5px !important;
+}
+
+.toggles {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4px;
+}
+
+.toggleOption {
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.toggleOption:hover {
+  color: #ffffff !important;
+}
+
+.toggleOption.active {
+  background-color: rgba(255, 174, 128, 0.6);
+  color: #ffffff !important;
+}
+
+.toggleOptionText {
+  text-align: center;
+}
+
+.assetSelectBalance {
+  flex: 1;
+  margin-left: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.assetSelectMenu {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.displayDualIconContainerSmall {
+  position: relative;
+  margin-right: 12px;
+}
+
+.displayAssetIconSmall {
+  border-radius: 50px;
+  background: #ffffff;
+  height: 24px;
+}
+
+.manageLocalContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.assetSelectActions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.searchContainer {
+  padding: 24px;
+  background-color: rgb(255, 255, 255);
+}
+
+.assetSearchResults {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  min-width: 25vw;
+}
+
+.smallInputContainer {
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+  background: transparent;
+  max-width: 100%;
+  min-height: 50px;
+}
+
+.inputTitleContainerSlippage {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  width: -webkit-fill-available;
+}
+
+.inputBalanceSlippage {
+  padding-left: 12px;
+}
+
+.disclaimerContainer {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  min-height: 100px;
+  width: 100%;
+}
+
+.disclaimer {
+  align-self: center;
+  font-size: 13px !important;
+  font-weight: 200 !important;
+  border-radius: 10px;
+  background: transparent !important;
+  padding: 24px !important;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (max-width: 1280px) {
+  .actionsContainer {
+    border-left: 0px solid rgba(104, 108, 122, 0.25) !important;
+  }
+
+  .toggleButtons {
+    display: flex;
+    flex-direction: row;
+    top: 4%;
+    left: calc(50% - 85px);
+  }
+
+  .backButton {
+    left: -40px !important;
+    top: 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .buttonWrap {
+    margin-top: 20px !important;
+  }
+
+  .actionsContainer {
+    border-left: 0px solid rgba(104, 108, 122, 0.25);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+
+  .helpIcon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .inputTitleContainer {
+    top: 48px;
+  }
+  .smallInputContainer {
+    flex-direction: column;
+    padding: 1rem 0 !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .actionsContainerFlex {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .massiveInputAssetSelect {
+    margin-bottom: 20px;
+  }
+
+  .some {
+    margin-left: 0px !important;
+  }
+}
